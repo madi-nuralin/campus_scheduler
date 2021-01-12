@@ -1,0 +1,39 @@
+.schedule {
+	border-spacing: 5px;
+}
+
+/*.schedule tr {
+
+}
+
+.schedule td {
+	padding: 10px;
+	border: 1px solid #f1f1f1;
+
+}
+
+.schedule .filled {
+	background-color: #577F92;
+	color: white;
+}*/
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:  5% calc(1/7*90%) calc(1/7*90%) calc(1/7*90%) calc(1/7*90%) calc(1/7*90%) calc(1/7*90%) calc(1/7*90%);
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.filled {
+	background-color: #577f92;
+	color: white;
+	text-align: left;
+}

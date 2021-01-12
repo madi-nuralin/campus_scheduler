@@ -1,0 +1,192 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+@font-face {
+  font-family: Molengo-Regular;
+  src: url('/fonts/Molengo/Molengo-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('/fonts/Roboto/Roboto-Regular.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+:root {box-sizing: border-box;}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+	font-family: Roboto-Regular;
+}
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+body {opacity: 1; transition: all 1s ease;}
+.loaded {opacity: 1; display: none !important;}
+
+/*//////////////////////////////////////////////////////////////////
+[ HEADER ]*/
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+header ul li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #111;
+}
+
+.active {
+  /*background-color: #555;*/
+  border-bottom: 3px red solid;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ MAIN ]*/
+
+main {
+	display: block;
+	background-color: #fff;
+}
+
+.main {
+	margin: 20px 15%;
+	background-color: transparent;
+  overflow-x: hidden;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ BUTTON ]*/
+.btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  background: none;
+  font-size: inherit;
+  border: none;  
+}
+
+.btn:focus {outline: none;}
+
+.btn-type-rounded {
+  height: 34px;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.btn-type-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 25px;
+  background-color: transparent; 
+}
+
+.btn-hover-1:hover {  
+  color: #1e47b0;
+  transform: 0.5s;
+}
+
+.btn-hover-2:hover {  
+  color: #333;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transform: 0.2s;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ CSS GRID ]*/
+[class*='col-'] {
+  float: left;
+  margin-top: 6px;
+}
+
+.col-5 {width: 5%;}
+.col-10 {width: 10%;}
+.col-15 {width: 15%;}
+.col-20 {width: 20%;}
+.col-25 {width: 25%;}
+.col-30 {width: 30%;}
+.col-40 {width: 40%;}
+.col-45 {width: 45%;}
+.col-50 {width: 50%;}
+.col-55 {width: 55%;}
+.col-60 {width: 60%;}
+.col-70 {width: 70%;}
+.col-75 {width: 75%;}
+.col-80 {width: 80%;}
+.col-100 {width: 100%;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ INPUT ]*/
+input[type=text],
+input[type=date],
+input[type=number],
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  resize: vertical;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=number]:focus,
+input[type=password]:focus, select:focus, textarea:focus {
+  outline: 1px solid #000;
+  border-radius: 0px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.search:focus{outline: none;}
+/*#c2dbff*/
+
+.dynamic-list {
+  height: 350px;
+  overflow-y: scroll;
+}
